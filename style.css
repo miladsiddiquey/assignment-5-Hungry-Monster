@@ -208,6 +208,11 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+    .ingredients{
+        line-height: 5px;
+        text-align: left;
+        margin-left:40%;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -222,10 +227,20 @@ body{
     .meal-details{
         width: 700px;
     }
+    .ingredients{
+        line-height: 5px;
+        text-align: left;
+        margin-left:40%;
+    }
 }
 
 @media screen and (min-width: 992px){
     #meal{
         grid-template-columns: repeat(4, 1fr);
+    }
+    .ingredients{
+        line-height: 5px;
+        text-align: left;
+        margin-left:40%;
     }
 }
