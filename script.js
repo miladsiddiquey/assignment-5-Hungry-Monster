@@ -23,11 +23,11 @@ function getMealList() {
                     html += `
                     <div  class = "meal-item" data-id = "${meal.idMeal}">
                         <div class = "meal-img">
-                            <img src = "${meal.strMealThumb}" alt = "food">
+                            <img class = "recipe" src = "${meal.strMealThumb}" alt = "food">
                         </div>
                         <div class = "meal-name">
-                            <h3>${meal.strMeal}</h3>
-                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                            <h3 class = "recipe">${meal.strMeal}</h3>
+                            
                         </div>
                     </div>
                 `;
@@ -46,7 +46,7 @@ function getMealList() {
 // get recipe of the meal
 function getMealRecipe(e) {
     e.preventDefault();
-    if (e.target.classList.contains('recipe-btn')) {
+    if (e.target.classList.contains('recipe')) {
         let mealItem = e.target.parentElement.parentElement;
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
             .then(res => res.json())

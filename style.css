@@ -104,22 +104,6 @@ body{
 .meal-name h3{
     font-size: 1.4rem;
 }
-.recipe-btn{
-    text-decoration: none;
-    color: #fff;
-    background: #f06c4e;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.75rem 0;
-    display: block;
-    width: 175px;
-    margin: 1rem auto;
-    border-radius: 2rem;
-    transition: all 0.4s linear; 
-}
-.recipe-btn:hover{
-    background: #f06c4e;
-}
 
 /* meal details */
 .meal-details{
@@ -184,9 +168,6 @@ body{
     margin-left:40%;
 }
 
-
-
-
 /* not found result */
 .notFound{
     grid-template-columns: 1fr!important;
@@ -196,22 +177,12 @@ body{
     width: 100%;
 }
 
-
-
-
-
-
 /* Media Queries */
 @media screen and (min-width: 600px){
     .meal-search-box{
         width: 540px;
         margin-left: auto;
         margin-right: auto;
-    }
-    .ingredients{
-        line-height: 5px;
-        text-align: left;
-        margin-left:40%;
     }
 }
 
@@ -227,20 +198,10 @@ body{
     .meal-details{
         width: 700px;
     }
-    .ingredients{
-        line-height: 5px;
-        text-align: left;
-        margin-left:40%;
-    }
 }
 
 @media screen and (min-width: 992px){
     #meal{
         grid-template-columns: repeat(4, 1fr);
-    }
-    .ingredients{
-        line-height: 5px;
-        text-align: left;
-        margin-left:40%;
     }
 }
